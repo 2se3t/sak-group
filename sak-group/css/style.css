@@ -1,0 +1,25 @@
+/*
+Отступы с лева 10vw
+Отступы с права 4vw
+Отступы с низу h1 -
+*/
+
+
+.hero h1, p{
+    margin-left: 10vw;
+}
+
+.hero h1{
+    padding-top: 20vh;
+    font-size: 6vh;
+}
+
+.hero p{
+    font-size: 2.3vh;
+    padding-right: 4vw;
+}
+
+section{
+    height: 600px;
+}
+
