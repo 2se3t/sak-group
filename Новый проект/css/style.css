@@ -7,37 +7,60 @@
 body{
     height: 100%;
     margin: 0;
+    background: #111417;
+    border: 0;
 }
 
 
-.hero h1, p{
+section{
+    height: 400px;
+}
+
+
+hr {
+	border: solid #707273;
+
+	clear: both;
     margin-left: 10vw;
-    font-family:'Roboto Condensed', sans-serif;
+
+}
+/*
+hr {
+	border: solid #283436;
+	width: 3.5vw;
+	clear: both;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
-.hero h1{
-    padding-top: 20vh;
-    font-size: 6vh;
+:hover h1 + hr {
+	border-color: #9e2626;
+	width: 3.5vw;
+
 }
 
-.hero p{
-    font-size: 2.3vh;
-    padding-right: 4vw;
-}
+ПРОТОТИП */
+
+
+/*Hero*/
 
 .hero{
-    background: url(../set.png) no-repeat center;
+    background: #0f1223 url(../set.png) no-repeat center;
     background-size: cover;
     min-height: 650px;
     width: 100%;
     position: relative;
 }
-.about{
-    padding: 20vh;
-}
-.advant{
-    padding: 20vh;
-}
-.ad-section{
-    padding: 20vh;
+
+
+/*about*/
+
+
+/*footer*/ 
+footer{
+    background-color: #13141e;
+    height: 400px;
 }
