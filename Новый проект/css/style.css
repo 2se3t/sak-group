@@ -70,7 +70,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 50px;
     background-color: #707273;
     color: white;
 }
@@ -136,6 +136,7 @@ footer{
         right: 0;
         left: 0;
         margin-top: 20px;
+        z-index: 1;
     }
 
     .menu li a {
