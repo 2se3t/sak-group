@@ -201,7 +201,48 @@ header{
     grid-gap: 20px;
 }
 
-.good {
-    
-   
+.control ul li {
+
+    list-style: none;
+    background-color: #111417;
+    padding: 5px 15px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.item{
+    position: relative;
+}
+
+
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}.item:hover{
+    -webkit-box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+    box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.item::before{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    opacity: 1;
+    position: absolute;
 }
