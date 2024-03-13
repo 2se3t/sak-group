@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sak group</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Nav bar
+    =====================-->
+
+
+    <header class="navbar">
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle"/>
+          <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+         <div class="menu">
+            <li><a onclick="scrollToSection('hero')">Главная</a></li>
+            <li><a onclick="scrollToSection('about')">О нас</a></li>
+            <li><a onclick="scrollToSection('advant')">Контакты</a></li>
+            <li><a onclick="scrollToSection('request')">Запрос</a></li>
+          </div>
+        </ul>
+      </header>
+
+
+
+    <!--ГЛАВНАЯ
+=================-->
+    <section id="hero">
+        <div class="container">
+            <div class="hero">
+                <h1>Хотите найти оборудование, товар или машину из китая?</h1>
+                <p>Мы найдем купим привезем вам любой товар под ключ каких размеров он бы ни был</p>
+                
+                <button class="black">Сделать запрос ➜</button>
+                <button class="trs">Читать дальше ➜</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="advant">
+        <img src="home-hero.png" alt="">
+        <div class="adv-container">
+            <div class="scrolling-wrapper">
+              <!-- Ваш контент здесь -->
+              <div class="item" data-popup="popup1"><i class="fa-solid fa-plane"></i><h1>Авиа превозка</h1><button class="trs">Читать дальше ➜</button></div>
+              <div class="item" data-popup="popup2"><i class="fa-solid fa-train"></i><h1>Морские перевозки</h1><button class="trs">Читать дальше ➜</button></div>
+              <div class="item" data-popup="popup3"><i class="fa-solid fa-ship"></i><h1>ЖД перевозки</h1><button class="trs">Читать дальше ➜</button></div>
+              <!-- Добавьте больше элементов, если нужно -->
+            </div>
+          </div>
+          <div id="popup1" class="popup">
+            <div class="popup-content">
+
+              <h1>Заголовок</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis dolore inventore obcaecati impedit ab tenetur. Vel, et nam atque qui sunt hic assumenda quam quos cupiditate totam sapiente itaque?</p>
+              <button class="close-btn">Закрыть</button>
+            </div>
+          </div>
+          <div id="popup2" class="popup">
+            <div class="popup-content">
+
+              <h1>Заголовок</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis dolore inventore obcaecati impedit ab tenetur. Vel, et nam atque qui sunt hic assumenda quam quos cupiditate totam sapiente itaque?</p>
+              <button class="close-btn">Закрыть</button>
+            </div>
+          </div>
+          <div id="popup3" class="popup">
+            <div class="popup-content">
+
+              <h1>Заголовок</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis dolore inventore obcaecati impedit ab tenetur. Vel, et nam atque qui sunt hic assumenda quam quos cupiditate totam sapiente itaque?</p>
+              <button class="close-btn">Закрыть</button>
+            </div>
+          </div>
+    </section>
+    <!--О НАС
+=================-->
+
+    <section id="about">
+        <h1>О нас</h1>
+        <img src="look.png" alt="">
+        <div class="about">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+            <h1>Sak group</h1>
+            <p>Компания Shenzhen-Ber logistics – это современная, развивающаяся, адаптированная к условиям рынка логистическая компания. Мы являемся представителями китайской компании, основанной в 2000-х годах. За время работы компания зарекомендовала себя как надежный партнер и высококвалифицированный специалист в сфере логистики.</p>
+        </div>
+    </section>
+
+    <!--ЭТАПЫ ПОСТАВКИ
+=================-->
+
+
+    <section id="pros">
+        <h1>Этапы поставки</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas pariatur sit nisi recusandae corporis labore perspiciatis atque consectetur repudiandae molestiae molestias, debitis nemo magnam reiciendis. Quae esse assumenda dolorume perspiciatis atque consectetur repudiande perspiciatis atque consectetur repudiand.</p>
+        <div class="block container">
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+
+            <div class="item">
+                <h2>Этап</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea repudiandae ex beatae temporibus harum excepturi impedit reiciendis mollitia soluta consectetur exercitationem, nulla aspernatur sint architecto quos doloremque labore. Deleniti, porro!.</p>
+            </div>
+            
+        </div>
+
+     <!--ПРЕИМУЩЕСТВА
+=================--> 
+
+
+
+        <!--ЗАПРОС
+=================--> 
+<section id="request">
+    <div class="request">
+        <h1>Запрос</h1>
+        <p>Оставьте свои контакты и мы с вами свяжемся!</p>
+    </div>
+    <div id="response"></div>
+    <form id="contactForm" method="post" action="inc/index.php" novalidate>
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name"  autocomplete="off" pattern="[а-яА-ЯёЁ\s]+" required><br>
+        <label for="phone">Телефон:</label><br>
+        <input type="text" id="phone" name="phone"  autocomplete="off" pattern="[\d\+\s]+" required><br><br>
+        <input type="submit" value="Отправить">
+    </form>
+    <div id="error" class="error"></div>
+    <div class="contact">
+        <h1>Наши контакты</h1>
+        <p>Номер: <br>
+            +7 747 710 0005
+           Почта: <br>
+           sakimpex@mail.ru <br>
+           Адрес: <br>
+           Таукехана 26/2
+        </p>
+    </div>
+</section>
+
+
+    <script src="https://kit.fontawesome.com/ab4a839272.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+body{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+}
+
+
+/*GLOBAL
+============================*/
+.container{
+    width: 45%;
+    margin: 0 auto;
+}
+
+
+@media(max-width:820px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/*Fonts
+============================*/
+ h1{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+p{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size:28px; 
+}
+
+@media(min-width:1440px){
+    .hero h1{
+        font-size: 75px;
+    }
+
+    .hero p{
+        font-size: 40;
+    }
+}
+
+
+
+/*Hero
+============================*/
+#hero{
+    padding-top: 10vh;
+}
+#hero h1, p{
+    color: #000000d7;
+
+
+}
+
+#hero h1{
+    margin-bottom: 1vh;
+    margin-top: 0;
+}
+
+hr{
+    width: 90px; 
+    height: 3px; 
+    background-color: rgb(105, 16, 16); /* Цвет линии */
+    border: none;
+    transition: width 0.3s ease; /* Плавный переход для изменения ширины */
+    margin: 0;
+  }
+
+  .trs{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    border: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.black {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Радиус скругления */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .black:hover {
+    background-color: #333;
+  }
+  
+
+
+/*About
+============================*/
+.about i{
+    margin-top: 2vh;
+    font-size: 30px;
+    color: #418aff;    
+}
+#about{
+    margin-top: 4vh;
+    align-items: center;
+    width: 100%;
+}
+.about{
+    text-align: left;
+    background-color: #f7f6f6;
+    margin: 0 auto;
+    padding: 2vh 3vw 1vh  3vw;
+    height: auto;
+    border-radius: 10px; /* Делаем контейнеры округлыми */
+}
+
+.about h1{
+    font-size: 30px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.about p{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+#about img{
+    margin-left: -30%;
+    margin-top: -7vh;
+    margin-bottom: -2vh;
+    width: 30%;
+    height: auto;
+}
+
+
+@media (max-width: 1024px)  {
+
+
+    .about{
+        width: 80% !important;
+        padding: 2vh 7vw 1vh  7vw !important;
+    }
+
+    #about img{
+        width: 35% !important;
+        margin-left: -45% !important;
+
+    }
+}
+
+
+
+/*Pros
+============================*/
+
+
+/*Advant
+============================*/
+
+img{
+    margin-top: 2vh;
+    width: 100%;
+    height: auto;
+}
+
+@media(min-width:711px){
+    img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media(min-width:1100px){
+    img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media(min-width:1800px){
+    img{
+        width: 40%;
+        height: auto;
+    }
+}
+.item h1{
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 1vh;
+}
+i{
+    margin-top: 0.35vh;
+    color: rgb(214, 100, 100);
+}
+
+.adv-container {
+
+    width: 100%;
+    overflow-x: scroll; /* Включаем горизонтальную прокрутку */
+    overflow-y: hidden; /* Отключаем вертикальную прокрутку */
+    white-space: nowrap; /* Отключаем перенос строк */
+  }
+  
+  .adv-container::-webkit-scrollbar {
+    display: none; /* Скрываем ползунок прокрутки для браузеров на базе WebKit */
+  }
+  
+  .scrolling-wrapper {
+    display: inline-block;
+  }
+  
+  .item {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-right: 10px;
+    border-radius: 10px; /* Делаем контейнеры округлыми */
+  }
+  
+  .item:hover {
+    background-color: #ffffff; /* Изменяем цвет при наведении на элемент */
+    border: 0.1px   ;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%); /* Начальное положение за пределами экрана снизу по центру */
+    width: 90%;
+    max-width: 500px;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    opacity: 0; /* Начальная прозрачность: 0 */
+  }
+  
+  .popup.show {
+    display: block;
+    animation: slideIn 0.3s forwards; /* Анимация появления */
+  }
+  
+  .popup.hide {
+    animation: slideOut 0.3s forwards; /* Анимация скрытия */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, 100%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+    to {
+      transform: translate(-50%, 100%);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+
+  .popup p {
+    margin-bottom: 10px;
+  }
+  
+  .popup button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%; /* Кнопка на всю ширину всплывающего окна */
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup button:hover {
+    background-color: #ddd;
+  }
+  
+  
+/*MENU
+============================*/
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+
+}
+
+
+
+
+.navbar {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 0.1px solid rgba(171, 171, 171, 0.334); /* Добавляем нижнюю границу */
+    z-index: 1000;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: 300;
+
+}
+
+.menu {
+    display: flex;
+    font-size: 18px;
+    list-style-type: none;
+    backdrop-filter: blur(10px);
+}
+.menu li {
+    padding: 5px 15px;
+}
+.menu li a:hover {
+    transition:all 0.5s;
+    color: #d2d2d2;
+}
+#checkbox_toggle {
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hamburger-line {
+    background-color:rgb(0, 0, 0) ;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamburger-line::before,
+.hamburger-line::after {
+    background-color: rgb(0, 0, 0);
+    content:'' ;
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+}
+.hamburger-line::before {
+    top: 7px;
+}
+.hamburger-line::after {
+    top: -7px;
+}
+
+@media (max-width:768px) {
+    .menu {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: fixed ;
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu li a {
+        color: #000000;
+        display: block;
+        padding: 15px;
+    }
+
+    .menu li {
+        transition: .5s;
+    }
+
+    #checkbox_toggle:checked ~ .menu{
+        display: block;
+        max-height: 100%;
+        transition: all .5s;
+    }
+    
+    .hamburger{
+        display: block;
+        padding: 20px 0;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+        background-color: transparent;
+    }
+    
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+}
+
+
+
+
+::selection {
+    background: #ff9c9c; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+   }
+
