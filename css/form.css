@@ -1,0 +1,129 @@
+#request{
+    margin-bottom: 2%;
+}
+
+.container-req {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.req-q{
+    text-align: center;
+    color: #000000;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+@media(max-width:850px){
+    .req-img {
+        margin-left: -60% !important;
+        margin-bottom: -70px !important;
+        width: 165px !important;
+    }
+    
+}
+
+
+.req-img {
+    margin-left: -34%;
+    margin-bottom: -5%;
+    width: 10%;
+}
+
+
+
+
+.req-c p{
+    margin-bottom: 3%;
+}
+
+.req-c{
+    width: 40%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0.1px #cccccc;
+    padding-top: 8%;
+    background-color: #f5f5f5;
+    padding-bottom: 3%;
+}
+
+
+@media(max-width:850px){
+    .req-q{
+        margin-top: 5% !important;
+        width: 86% !important;
+    }
+    
+    .req-c{
+        padding-top: 65px !important;
+        width: 89% !important;
+    }
+    .container-req{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        display: block;
+    }
+
+    .request{
+        width: 80% !important;
+    }
+}
+
+
+
+.request {
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+.req-q h1{
+    margin-bottom: -100px;
+}
+
+.request p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.error{
+    margin-top: 1vh;
+    color: #000000;
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: 200;
+}
+
+
+input[type="text"] {
+    border: none;
+    background-color: #00000000;
+    border-bottom: 2px solid #9a9a9a;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    outline: none;
+    width: 100%; /* Растягиваем инпуты на всю ширину */
+    box-sizing: border-box; /* Учитываем внутренние отступы в ширине */
+}
+
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000; 
+    color: #fff; 
+    cursor: pointer;
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+button[type="submit"]:hover {
+    background-color: #434343; 
+}

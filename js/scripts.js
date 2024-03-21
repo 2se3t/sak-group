@@ -1,10 +1,21 @@
+
+
+
+
+
 function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
+  const section = document.getElementById(sectionId);
+  if (section) {
+      const windowHeight = window.innerHeight;
+      const sectionTop = section.getBoundingClientRect().top;
+      const offset = sectionTop - (windowHeight / 4); // Высчитываем смещение
+      window.scrollBy({ top: offset, behavior: 'smooth' });
+  }
 }
 
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
 
 document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('click', () => {

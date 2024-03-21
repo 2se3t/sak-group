@@ -1,6 +1,3 @@
-
-
-
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
     var form = event.target;
@@ -10,7 +7,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     var phone = form.querySelector("#phone").value;
 
     // Проверка на правильность введенных данных
-    var namePattern = /[а-яА-ЯёЁ\s]+/;
+    var namePattern = /[А-Яа-яЁё]+/;
     var phonePattern = /[\d\+\s]+/;
     if (!namePattern.test(name)) {
         errorDiv.innerText = "Неверный формат имени. Имя может содержать только буквы русского алфавита и пробелы.";
@@ -42,6 +39,3 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     };
     xhr.send(formData);
 });
-
-
-
