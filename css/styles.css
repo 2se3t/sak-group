@@ -273,7 +273,7 @@ h3{
 }
 
 .about2{
-    background-color: #fbf8f8;
+    background-color: #f4f4f4;
     border-radius: 5px;
     margin: 0 auto;
     padding: 15px;
@@ -343,6 +343,10 @@ h3{
     }
 } 
 
+#services h1{
+    font-size: 35px;
+}
+
 .block-serv {
     display: flex;
     flex-wrap: wrap;
@@ -368,7 +372,7 @@ h3{
 }
 
 /* Медиа-запрос для устройств с шириной экрана меньше 768px (например, мобильные устройства) */
-@media (max-width: 768px) {
+@media (max-width: 1290px) {
     .item-serv {
         width: 100%; /* Один элемент в ряд на узком экране */
         margin-right: 0; /* Убираем отступ справа на узком экране */
@@ -377,77 +381,31 @@ h3{
 
 
 .box{
-    background: #f3f3f3 url(../box.png);
+    background: #f4f4f4 url(../box.png);
     background-size:200px ;
-    background-position: right top; /* Устанавливаем фоновое изображение справа */
+    background-position: right bottom; /* Устанавливаем фоновое изображение справа */
     background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
 }
 
 .equ{
-    background: #f3f3f3 url(../equ.png);
+    background: #f4f4f4 url(../equ.png);
     background-size:200px ;
-    background-position: right ; /* Устанавливаем фоновое изображение справа */
+    background-position: right bottom; /* Устанавливаем фоновое изображение справа */
     background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
 
 }
+.part{
+    background: #f4f4f4 url(../part.png);
+    background-size:200px ;
+    background-position: right bottom; /* Устанавливаем фоновое изображение справа */
+    background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
 
+}
 
 
 
 /*Advant
 ============================*/
-#plus {
-    background: #f0f0f0;
-    border-radius: 5px;
-    margin-left: 1%;
-    width: 98%;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
-    display: flex;
-    justify-content: center;
-}
-
-#plus i{
-    color: #000000;
-    margin-top: 2vh;
-    margin-left: 0;
-}
-
-
-#plus h4{
-    color: #000000;
-    font-size: 25px;
-}
-
-.plus-item {
-    margin: 0 auto;
-    text-align: center;
-    width: 40%;
-}
-
-.plus-item h4 {
-    margin-top: 10px;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 400;
-}
-
-@media (max-width: 1000px) {
-    #plus {
-        display: block;
-        border-radius: 5px;
-        margin-left: 1%;
-        width: 93%;
-        margin: 0 auto;
-    }
-
-    #plus h4{
-        margin-bottom: 2vh;
-    }
-}
-
-
-
-
 
 
 
