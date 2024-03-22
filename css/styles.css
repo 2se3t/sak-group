@@ -41,16 +41,20 @@ p{
     font-size:28px; 
 }
 
-@media(min-width:1440px){
-    .hero h1{
-        font-size: 75px;
-    }
 
-    .hero p{
-        font-size: 40;
-    }
+.red-h{
+    color: rgb(200, 77, 77);
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
 }
 
+.blue-h {
+    color: rgb(65, 108, 218);
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+}
 
 
 /*Hero
@@ -69,14 +73,20 @@ p{
     margin-top: 0;
 }
 
-hr{
-    width: 90px; 
-    height: 3px; 
-    background-color: rgb(105, 16, 16); /* Цвет линии */
-    border: none;
-    transition: width 0.3s ease; /* Плавный переход для изменения ширины */
-    margin: 0;
-  }
+@media(min-width:1440px){
+    .hero h1{
+        font-size: 70px;
+    }
+    .red-h{
+        font-size: 70px;
+    }
+    
+    .blue-h {
+        font-size: 70px;
+    }
+}
+
+
 
   .trs{
     display: inline-block;
@@ -594,7 +604,6 @@ i{
 ============================*/
 header {
     height: 50px;
-    padding-top: 5.5px;
     width: 100%;
     position: fixed;
 
@@ -734,8 +743,63 @@ header {
 
 
 footer{
-    height: 5vh;
-    background-color: #1d1d1d;
+    text-align: left;
+    height: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: #ddd;
+    background-color: #383838;
+}
+
+.footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer h1{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.footer p{
+    font-size: 19px;
+    color: #fff ;
+}
+
+h4{
+    color: #7a7a7a;
+    text-align: left;
+}
+
+h2{
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+hr{ 
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1.5px #bfbfbf;
+    width: 70px;
+}
+
+.foot-img{
+    margin-left: 44%;
+    margin-bottom: -80px;
+    width: 220px;
+}
+
+.footer span{
+    font-size: 30px;
+    color: #de5e5e;
+} 
+
+.sak-ab{
+    text-align: left;
 }
 
 
