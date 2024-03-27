@@ -109,6 +109,35 @@
         </div>
     </section>
 
+    
+
+    <!--Услуги
+=================-->
+    <section id="services">
+        <h1>Услуги</h1>
+        <div class="block-serv">
+            <div class="item-serv box">
+                <h1>Поиск</h1>
+                <h3>товара и наилучшего постовщика</h3>
+            </div>
+
+            <div class="item-serv equ">
+                <h1>Перевозка</h1>
+                <h3>авто авиа железнодорожные перевозки грузов </h3>
+            </div>
+
+            <div class="item-serv part">
+                <h1>Детали</h1>
+                <h3>Мы найдем завод который производит оригинальные детали на ваш станок</h3>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+
+
     <!--ЭТАПЫ ПОСТАВКИ
 =================-->
 <section id="pros">
@@ -196,17 +225,17 @@
                     <form id="contactForm" method="post" action="inc/index.php" novalidate>
                         <input type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="off" pattern="[а-яА-ЯёЁ\s]+" required><br>
                         <input type="text" id="phone" name="phone" placeholder="Введите ваш телефон" autocomplete="off" pattern="[\d\+\s]+" required><br><br>
-                        <button type="submit" value="Отправить">Отправить</button>
+                        <input type="checkbox" id="captchaCheckbox" required>
+                        <label for="captchaCheckbox">Я не робот</label><br>
+                        <button type="submit" id="submitButton" value="Отправить">Отправить</button>
                     </form>
                     <div id="error" class="error"></div>
                 </div>
             </div>
         </div>
-</section>
-    
-
+    </section>
 <img src="toplook.png" class="foot-img">
-<footer >
+<footer>
     <div class="footer">
         <h1>Контакты</h1>
         <hr>

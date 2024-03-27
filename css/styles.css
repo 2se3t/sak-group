@@ -319,6 +319,10 @@ h3{
     }
 
 }
+/*Services2
+============================*/
+
+
 
 /*Services
 ============================*/
@@ -610,8 +614,6 @@ header {
 }
 
 
-
-
 .navbar {
     color: white;
     width: 100%;
@@ -747,17 +749,23 @@ footer{
     height: auto;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    color: #ddd;
-    background-color: #383838;
+
+
 }
+
+
 
 .footer{
     width: 80%;
+    border-radius: 10px;
     margin: 0 auto;
+    padding: 50px;
+    background-color: #efefef;
+    box-shadow: 0 0 40px 0.1px #cccccc;
 }
 
 .footer h1{
-    color: #fff;
+    color: #000000;
     font-size: 30px;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -765,17 +773,18 @@ footer{
 
 .footer p{
     font-size: 19px;
-    color: #fff ;
+    color: #000000 ;
 }
 
 h4{
-    color: #7a7a7a;
+    color: #000000;
     text-align: left;
 }
 
 h2{
     font-family:'Roboto Condensed', sans-serif;
     font-size: 24px;
+    color: #000;
     font-weight: 400;
 }
 
@@ -783,13 +792,13 @@ hr{
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: solid 1.5px #bfbfbf;
+    border: solid 1.5px #868686;
     width: 70px;
 }
 
 .foot-img{
     margin-left: 44%;
-    margin-bottom: -80px;
+    margin-bottom: -108px;
     width: 220px;
 }
 
@@ -803,9 +812,14 @@ hr{
 }
 
 
+@media (max-width:768px) {
+    .footer {
+        width: 75%;
+    }
+}
 
 ::selection {
-    background: #ff9c9c; /* Цвет фона */
+    background: #b5b5b5; /* Цвет фона */
     color: #000000; /* Цвет текста */
    }
 

@@ -42,7 +42,7 @@
 
 .req-c{
     width: 40%;
-    height: 300px;
+    height: 340px;
     margin: 0 auto;
     border-radius: 4px;
     box-shadow: 0 0 40px 0.1px #cccccc;
@@ -122,8 +122,56 @@ button[type="submit"] {
     cursor: pointer;
     font-family:'Roboto Condensed', sans-serif;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 button[type="submit"]:hover {
     background-color: #434343; 
+}
+
+
+/* Стилизация капчи (галочки) */
+#captchaCheckbox {
+    display: none; /* Скрываем сам чекбокс */
+}
+
+/* Создаем кастомную стилизацию для капчи */
+#captchaCheckbox + label {
+    position: relative;
+    padding-left: 35px; /* Расстояние между текстом и капчей */
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif; /* Используем указанный шрифт */
+    font-weight: 400; /* Нормальное начертание шрифта */
+    
+}
+
+/* Стили для галочки */
+#captchaCheckbox + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #000; /* Черная рамка */
+    background-color: #fff; /* Белый фон */
+    border-radius: 1px;
+}
+
+/* Стили для галочки при нажатии на нее */
+#captchaCheckbox:checked + label:before {
+    background-color: #000; /* Черный цвет галочки при активации */
+}
+
+/* Стили для галочки в форме галочки */
+#captchaCheckbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 6.5px;
+    width: 8px;
+    height: 15px;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); /* Поворачиваем галочку */
+    border-color: #fff; /* Цвет галочки */
 }
