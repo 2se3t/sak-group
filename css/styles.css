@@ -8,6 +8,9 @@ body{
     text-align: center;
 }
 
+* {
+    touch-action: manipulation;
+}
 
 /*GLOBAL
 ============================*/
@@ -121,6 +124,19 @@ p{
     background-color: #333;
   }
   
+
+  .trs-2{
+    display: inline-block;
+    padding: 10px 4px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    border: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /*About
@@ -814,7 +830,7 @@ hr{
 
 @media (max-width:768px) {
     .footer {
-        width: 75%;
+        width: 64%;
     }
 }
 
