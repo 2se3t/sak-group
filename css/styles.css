@@ -348,6 +348,11 @@ h3{
     margin: 0 auto;
     padding: 20px;
 }
+#services-1 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .sr-img{
     width: 100px;
@@ -365,6 +370,31 @@ h3{
     margin: 0;
 }
 
+#services-1 i{
+    margin: 0;
+}
+@media(max-width:1700px){
+    #services-1 {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #services {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+@media(max-width:1000px){
+    #services-1{
+        width: 92%;
+        margin: 0 auto;
+        padding: 0;
+    }
+} 
+
 @media(max-width:1000px){
     #services{
         width: 92%;
@@ -372,9 +402,14 @@ h3{
         padding: 0;
     }
 } 
+.item-serv h1{
+    font-size: 30px ;
+    margin-bottom: 10px;
+}
 
 #services h1{
-    font-size: 35px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .block-serv {
@@ -396,41 +431,100 @@ h3{
     border-radius: 5px;
 }
 
+.item-serv {
+    /* остальные стили */
+    margin-right: 20px; /* отступ между элементами */
+}
+
+.item-serv:last-child {
+    margin-right: 0; /* убираем отступ у последнего элемента в ряду */
+}
+
 /* Убираем отступ у последнего элемента в ряду */
 .item-serv:nth-child(3n) {
     margin-right: 0;
 }
 
 /* Медиа-запрос для устройств с шириной экрана меньше 768px (например, мобильные устройства) */
-@media (max-width: 1290px) {
+@media (max-width: 750px) {
     .item-serv {
         width: 100%; /* Один элемент в ряд на узком экране */
         margin-right: 0; /* Убираем отступ справа на узком экране */
     }
 }
 
+@media (max-width: 865px) {
+    .item-serv h1{
+        font-size: 25px !important;
+    }
+}
+
 
 .box{
-    background: #f4f4f4 url(../box.png);
+    background: #f6f6f6 url(../box.png);
+    box-shadow: #0000002b 0 0 30px 1px;
     background-size:200px ;
     background-position: right bottom; /* Устанавливаем фоновое изображение справа */
     background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
 }
 
 .equ{
-    background: #f4f4f4 url(../equ.png);
+    background: #f6f6f6 url(../equ.png);
+    box-shadow: #0000002b 0 0 30px 1px;
     background-size:200px ;
     background-position: right bottom; /* Устанавливаем фоновое изображение справа */
     background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
 
 }
 .part{
-    background: #f4f4f4 url(../part.png);
+    background: #f6f6f6 url(../part.png);
+    box-shadow: #0000002b 0 0 30px 1px;
     background-size:200px ;
     background-position: right bottom; /* Устанавливаем фоновое изображение справа */
     background-repeat: no-repeat; /* Отключаем повторение фонового изображения */
 
 }
+
+.c-red{
+    background-color: #a2d1a6;
+}
+
+.i-red i{
+    color: #c85b5b;
+    font-size: 28px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+.i-green i{
+    color: #376f37;
+    font-size: 28px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+ 
+.i-blue i{
+    color: #2e3757;
+    padding-bottom: 2px;
+    font-size: 28px;
+    padding-left: 5px;
+}
+
+.i-red button{
+    color: #7b1d1d;
+
+}
+
+.i-green button{
+    color: #1f5c1f;
+}
+ 
+.i-blue button{
+    color: #5f71b2;
+
+}
+
+
 
 
 
@@ -526,7 +620,7 @@ i{
   }
   
   .item:hover {
-    background-color: #ffffff; /* Изменяем цвет при наведении на элемент */
+    background-color: #cbcbcb; /* Изменяем цвет при наведении на элемент */
     border: 0.1px   ;
   }
   
@@ -813,7 +907,7 @@ hr{
 }
 
 .foot-img{
-    margin-left: 44%;
+    margin-left: 50%;
     margin-bottom: -108px;
     width: 220px;
 }
@@ -831,6 +925,9 @@ hr{
 @media (max-width:768px) {
     .footer {
         width: 64%;
+    }
+    .foot-img{
+        margin-left: 32%;
     }
 }
 
