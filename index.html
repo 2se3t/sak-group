@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sak group</title>
+    <title>Поставки из Китая в Казахстан,поиск поставщиков оборудования и товаров</title>
+    <meta name=”description” content="Найдем купим привезем все что угодно оборудование,товары для маркетплейсов, станки, линии производства, запчасти и комплектующие">
+    <meta name="keywords" content="Поставки из китая, Китай товары, Китай производители, перевозки, поиск оборудования в китае, линии произвдства в китае, произведенные в Китае товары">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/form.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,6 +25,7 @@
             <li><a onclick="scrollToSection('about')">О нас</a></li>
             <li><a onclick="scrollToSection('advant')">Контакты</a></li>
             <li><a onclick="scrollToSection('request')">Запрос</a></li>
+            <li><a href="news.html">Новости</a></li>
           </div>
         </ul>
       </header>
@@ -33,8 +37,8 @@
     <section id="hero">
         <div class="container">
             <div class="hero">
-                <h1>Найдем купим и привезем из <span class="red-h">Китая</span> в <span class="blue-h">Казахстан</span></h1>
-                <p>Быстро найдем, выкупим и привезти любой груз</p>
+                <h1>Поставки из <span class="red-h">Китая</span> в <span class="blue-h">Казахстан</span> под ключ</h1>
+                <p>Быстро найдем, выкупим и привезем любое оборудование, любые линии произвдства, любые товары</p>
                 <button onclick="scrollToSection('request')" class="black" >Сделать запрос ➜</button>
                 <button onclick="scrollToSection('advant')" class="trs">Читать дальше ➜</button>
             </div>
@@ -134,7 +138,7 @@
     <div id="popup4" class="popup">
         <div class="popup-content">
             <h1>Поиск товара или оборудования по запросу</h1>
-            <p>Найдем товар от производителя в любом объеме, оборудование и запчасти а так же сырье для производства.</p>
+            <p>Поиск постовщика с любым товаром оборудование любой сложности, товары для розничной торговли и маркетплейсов и даже машины </p>
 
           <button class="close-btn">Закрыть</button>
         </div>
@@ -151,7 +155,7 @@
       <div id="popup6" class="popup">
         <div class="popup-content">
           <h1>Перевозка</h1>
-          <p>Используем самые разные методы доставки ваших грузов исходя из потребностей и объемов перевозки предлагаем самые выгодные маршруты и варианты логистики.</p>
+          <p>Превозка любого груза из Китая машины, товары, линии произвдства, оборудование и многое другое .</p>
           <button class="close-btn">Закрыть</button>
         </div>
       </div>
@@ -175,7 +179,7 @@
 
                 <div class="item-stage">
                     <i class="fa-solid fa-2"></i>
-                    <h3>Отправляете запрос на необходимый товар</h3>
+                    <h3>Поиск постовщика оборудования или товара в Китае </h3>
                 </div>
 
                 <div class="item-stage">
@@ -212,21 +216,19 @@
 
 <section id="services">
         <div class="block-serv">
-                <div class="item-serv equ ">
-                    <h1>Оборудование</h1>
-                    <h3>Мы найдем завод который выдаст вам гарантию </h3>
-                </div>
+            <div class="item-serv equ ">
+                <h1>Оборудование</h1>
+                <h3>Мы найдем завод который выдаст вам гарантию </h3>
+            </div>
 
-                <div class="item-serv  part">
-                    <h1>Детали</h1>
-                    <h3>Мы найдем завод который производит оригинальные детали на ваше оборудование</h3>
-                </div>
+            <div class="item-serv  part">
+                <h1>Детали</h1>
+                <h3>Мы найдем завод который производит оригинальные детали на ваше оборудование</h3>
+            </div>
 
-                <div class="item-serv box">
-                    <h1>Товары</h1>
-                    <h3>Мы найдем постовщика с самым лучшим качеством и дешевой ценой</h3>
-                </div>
-
+            <div class="item-serv box">
+                <h1>Товары</h1>
+                <h3>Мы найдем постовщика с самым лучшим качеством и дешевой ценой</h3>
             </div>
         </div>
 </section>
@@ -244,7 +246,7 @@
             <p class="req-q">Оставьте свои контакты и мы с вами свяжемся!</p>
             <div class="container-req">
                 <div class="request">
-                    <form id="contactForm" method="post" action="inc/index.php" novalidate>
+                    <form id="contactForm" method="post" action="inc/form.php" novalidate>
                         <input type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="off" pattern="[а-яА-ЯёЁ\s]+" required><br>
                         <input type="text" id="phone" name="phone" placeholder="Введите ваш телефон" autocomplete="off" pattern="[\d\+\s]+" required><br><br>
                         <input type="checkbox" id="captchaCheckbox" required>
@@ -261,25 +263,29 @@
     <div class="footer">
         <h1>Контакты</h1>
         <hr>
-        <p>Вы можете оставить заявку или позвнить сами, заявка будет обработана в течении 24 часов после ее отправки вам перезвонят или свяжутся через месенджер</p>
+        <p>Вы можете оставить заявку или позвонить сами. Заявка будет обработана в течение 24 часов после её отправки. Вам перезвонят или свяжутся через мессенджер.</p>
 
         <div class="number">
             <h2>Номер:</h1>
-            <p>+7 747 710 0005</p>
+            <p>+7 747 710 0005 <br>
+               +7 747 720 0005 <br>
+               +7 747 711 0005 <br>
+            </p>
         </div>
         <div>
             <h2>Адрес:</h1>
-            <p>Байтурсынова 999/2</p>
+            <p>Шымкент, пр.Тауке-Хана 26/2<br>
+			   Шымкент, Гастелло 147</p>
         </div>
     </div>
-
-
-</div>
 </footer>
+<h5>Copyright © 2024 SAKGROUP</h5>
 
     <script src="https://kit.fontawesome.com/ab4a839272.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/scripts.js"></script>
+	<!-- Google tag (gtag.js) -->
+
 </body>
 </html>

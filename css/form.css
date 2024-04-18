@@ -103,7 +103,7 @@
 input[type="text"] {
     border: none;
     background-color: #00000000;
-    border-bottom: 2px solid #9a9a9a;
+    border-bottom: 2px solid #630202;
     margin-bottom: 20px;
     padding: 5px 0;
     outline: none;
@@ -117,7 +117,7 @@ button[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #000000; 
+    background-color: #a63b3b; 
     color: #fff; 
     cursor: pointer;
     font-family:'Roboto Condensed', sans-serif;
@@ -126,7 +126,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #434343; 
+    background-color: #c25050; 
 }
 
 
@@ -153,14 +153,15 @@ button[type="submit"]:hover {
     top: -1px;
     width: 20px;
     height: 20px;
-    border: 1.5px solid #000; /* Черная рамка */
+    border: 1.5px solid #960000;
     background-color: #fff; /* Белый фон */
     border-radius: 1px;
 }
 
 /* Стили для галочки при нажатии на нее */
 #captchaCheckbox:checked + label:before {
-    background-color: #000; /* Черный цвет галочки при активации */
+    background-color: #a63b3b;
+    /* Черный цвет галочки при активации */
 }
 
 /* Стили для галочки в форме галочки */

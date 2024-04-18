@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Отправляем сообщение в телеграм-бота
-        $telegram_token = '6902961567:AAGHrAG9Vu_XU4faG4idwiE_r6GW3HGdaXs';
+        $telegram_token = '7070596625:AAGzA36Kd-zr9A7WDELzfMyQamjrGXKKYj8';
         $chat_id = '-1002088129507';
         $text = "Новый запрос от: $name\nНомер телефона: $phone";
 
